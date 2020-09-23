@@ -10,8 +10,9 @@
 <body>
   <script src="./js/vue.js"></script>
   <div id="app">
-    <input type="text" v-model="message">
-    <h1>{{message}}</h1>
+    <p>{{ counter }}</p>
+    <button @click="counter += 1">+1</button>
+    <p>{{lessThanThree}}</p>
   </div>
   
   <script src="./js/test.js"></script>  

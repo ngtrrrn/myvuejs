@@ -11,11 +11,8 @@
   <script src="./js/vue.js"></script>
   <div id="app">
     <p>現在{{number}}回クリックされています</p>
-    <button v-on:click="countUp">Click!</button>
-    <p v-on:mousemove="changeMousePosition(3, $event)">マウスを載せてください <span v-on:mousemove.stop="">反応しないでください</span></p>
-    <a v-on:click="noEvent" href="https://google.com/">Google</a>
-    <p>X:{{x}}, Y:{{y}}</p>
-    <input type="text" v-on:keyup.space="myAlert">
+    <button @click="countUp">Click!</button>
+    
   </div>
   
   <script src="./js/test.js"></script>  

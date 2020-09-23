@@ -11,7 +11,9 @@
   <script src="./js/vue.js"></script>
   <div id="app">
     <p>現在{{number}}回クリックされています</p>
-    <button v-on:click="countUp">Click!</button>
+    <button v-on:click="countUp(2)">Click!</button>
+    <p v-on:mousemove="changeMousePosition(3, $event)">マウスを載せてください</p>
+    <p>X:{{x}}, Y:{{y}}</p>
   </div>
   
   <script src="./js/test.js"></script>  

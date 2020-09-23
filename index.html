@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js練習</title>
+</head>
+
+<body>
+  <script src="./js/vue.js"></script>
+  
+  <div id="app">
+    <p v-once>{{message}}</p>
+    <p v-text="message"></p>
+    <p v-html="html"></p>
+    <p><a v-bind:href="url">google</a></p>
+    <p><a :[attribute]="url">google</a></p>
+    <p><a :[attribute]="urlTwitter" :id="number">Twitter</a></p>
+    <p><a v-bind="twitterObject">Twitter</a></p>
+
+    <button v-on:click="reverseMessage">
+      メッセージ反転
+    </button>
+  </div>
+  
+  <script src="./js/test.js"></script>
+
+</body>
+
+</html>

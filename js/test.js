@@ -6,13 +6,18 @@ new Vue({
     y: 0
     },
   methods: {
-    countUp: function(time) {
-      this.number += time
+    countUp: function() {
+      this.number += 1
     },
     changeMousePosition: function(divideNumber, event) {
       this.x = event.clientX / divideNumber;
       this.y = event.clientY / divideNumber;
+    },
+    noEvent: function(event) {
+      event.preventDefault();
+    }, 
+    myAlert() {
+      alert('アラート')
     }
-    
   }
 })

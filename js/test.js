@@ -1,19 +1,15 @@
 new Vue({
   el: '#app',
   data: {
-    counter: 0
-    },
-  computed: {
-    doubleCounterMethodComputed: function() {
-      return this.counter * 2;
-    }
+    isActive: true,
+    color: 'red',
+    bg: 'bg-blue'
   },
-  methods: {
-    countUp: function() {
-      this.counter += 1;
-    },
-    doubleCounterMethod: function() {
-      return this.counter * 2;
+  computed: {
+    classObject: function() {
+      return {
+        red: this.isActive,
+        'bg-blue': !this.isActive}
     }
   }
 })
